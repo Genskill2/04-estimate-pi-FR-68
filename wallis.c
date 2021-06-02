@@ -24,3 +24,11 @@ int main(void) {
   }
 }
 
+float wallis_pi(int itr)
+{ float hpi=1.00;
+ for(int n=1; n<itr;n++)
+ { 
+ hpi*= (4.00*n*n)/(float)((4.00*n*n)-1) ;
+ }
+ return 2*hpi;
+ }
